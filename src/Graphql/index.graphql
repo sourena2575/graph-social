@@ -1,0 +1,7 @@
+# import  User from './User/typeDefs.graphql'
+# import  Query from './User/typeDefs.graphql'
+# import  Mutation from './User/typeDefs.graphql'
+# import Chat from './Chat/typeDefs.graphql'
+# import Query from './Chat/typeDefs.graphql'
+# import Mutation from './Chat/typeDefs.graphql'
+# import Subscription from './Chat/typeDefs.graphql'

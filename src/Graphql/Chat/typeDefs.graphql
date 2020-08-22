@@ -1,0 +1,16 @@
+type Chat {
+  id: ID
+  userName: String
+  message: String
+  createdAt: String
+  updatedAt: String
+}
+type Query {
+  chats: [Chat]
+}
+type Mutation {
+  sendChat(message: String!, channelId: String!): Chat
+}
+type Subscription {
+  newChat(channelId: String): Chat
+}

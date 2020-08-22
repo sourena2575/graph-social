@@ -1,0 +1,32 @@
+type User {
+  id: ID
+  firstName: String
+  lastName: String
+  userName: String
+  email: String
+  password: String
+  image: String
+  gender: String
+  age: Int
+  followers: [ID]
+  followerCount: Int
+  confirmed: Boolean
+  createdAt: String
+}
+type Query {
+  users: [User]
+  user(userId: ID!): User
+  followers(userId: ID!): [User]
+}
+type Mutation {
+  register(userName: String!, email: String!, password: String!): String
+  login(userName: String!, password: String!): String
+  follow(userId: ID!): Boolean
+  profile(
+    firstName: String
+    lastName: String
+    image: String
+    age: Int
+    gender: String
+  ): User
+}
