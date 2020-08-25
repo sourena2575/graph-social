@@ -1,5 +1,6 @@
 const userResolvers = require("./User/resolvers");
 const chatResolvers = require("./Chat/resolvers");
+const postResolvers = require("./post/resolvers");
 module.exports = {
   User: {
     followerCount: (parent, args) => {
@@ -17,10 +18,12 @@ module.exports = {
   Query: {
     ...userResolvers.Query,
     ...chatResolvers.Query,
+    ...postResolvers.Query,
   },
   Mutation: {
     ...userResolvers.Mutation,
     ...chatResolvers.Mutation,
+    ...postResolvers.Mutation,
   },
   Subscription: {
     ...chatResolvers.Subscription,

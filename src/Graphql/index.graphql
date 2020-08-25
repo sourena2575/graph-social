@@ -5,3 +5,6 @@
 # import Query from './Chat/typeDefs.graphql'
 # import Mutation from './Chat/typeDefs.graphql'
 # import Subscription from './Chat/typeDefs.graphql'
+# import Post from './post/typeDefs.graphql'
+# import Query from './post/typeDefs.graphql'
+# import Mutation from './post/typeDefs.graphql'
