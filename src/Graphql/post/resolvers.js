@@ -4,7 +4,7 @@ const AuthCheck = require("../../Utils/AuthCheck");
 module.exports = {
   Query: {
     posts: async () => {
-      const posts = await Post.find();
+      const posts = await Post.find().sort({ createdAt: -1 });
       return posts;
     },
     post: async (_, { postId }) => {

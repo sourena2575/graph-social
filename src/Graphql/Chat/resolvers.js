@@ -5,8 +5,8 @@ const pubsub = new PubSub();
 
 module.exports = {
   Query: {
-    chats: async (_, args) => {
-      const chats = await Chat.find();
+    chats: async () => {
+      const chats = await Chat.find().sort({ createdAt: -1 });
       return chats;
     },
   },
